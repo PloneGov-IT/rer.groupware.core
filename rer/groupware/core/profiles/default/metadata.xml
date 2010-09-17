@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>1.0.0</version>
+  <dependencies>
+        <dependency>profile-rer.localmanager:default</dependency>
+		<dependency>profile-rer.editoradv:default</dependency>
+		<dependency>profile-rer.groupware.security:default</dependency>
+  </dependencies>
+</metadata>
