@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="Story" meta_type="Factory-based Type Information"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n" purge="False">
+ <property name="title">Story</property>
+  <property name="allowed_content_types">
+  <element value="Task"/>
+  <element value="Image"/>
+  <element value="File"/>
+ </property>
+</object>
