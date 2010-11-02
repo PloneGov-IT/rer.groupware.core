@@ -18,6 +18,5 @@ def addGroupProperty(context):
     group_properties = getToolByName(portal, 'portal_groupdata')
     if not group_properties.hasProperty('roomgroup'):
         group_properties.manage_addProperty('roomgroup','False','boolean')
-        import pdb;pdb.set_trace()
         
 
