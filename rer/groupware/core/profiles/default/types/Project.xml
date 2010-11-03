@@ -3,6 +3,7 @@
    xmlns:i18n="http://xml.zope.org/namespaces/i18n" purge="False"
    i18n:domain="plone">
  <property name="title">Project</property>
+ <property name="allow_discussion">True</property>
  <property name="allowed_content_types">
   <element value="Iteration"/>
   <element value="Story"/>
