@@ -1,0 +1,25 @@
+Create a new group
+------------------
+
+Just create a new room inside the portal root (let's cal it "*XXX*").
+
+Add new coordinators to the group
+---------------------------------
+
+Managers use the Simple Group Management interface (SGM) to add new user(s) to the xxx and xxx.coordinators group.
+
+After that, the Manager must manually add the group to the SimpleGroupManagement configuration::
+
+    xxx.coordinator|xxx
+
+This step must be done only for the first coordinator; additional coordinators must simple be added
+to the *xxx.coordinator* group.
+
+Add normal members to the group
+-------------------------------
+
+Coordinators (and also Manager) *must* use the Simple Group Management interface for handle members
+of the group.
+
+This because only with this user interface, users are also added to the right nofitication groups.
+
