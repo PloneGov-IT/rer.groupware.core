@@ -1,3 +1,8 @@
+Groupware Manual
+================
+
+Quick how-to start with RER Groupware.
+
 Create a new group
 ------------------
 
@@ -6,14 +11,15 @@ Just create a new room inside the portal root (let's cal it "*XXX*").
 Add new coordinators to the group
 ---------------------------------
 
-Managers use the Simple Group Management interface (SGM) to add new user(s) to the xxx and xxx.coordinators group.
+Managers use the Simple Group Management interface (SGM) to add new user(s) to the *xxx* and
+*xxx.coordinators* group.
 
 After that, the Manager must manually add the group to the SimpleGroupManagement configuration::
 
     xxx.coordinator|xxx
 
-This step must be done only for the first coordinator; additional coordinators must simple be added
-to the *xxx.coordinator* group.
+This last step must be done only for the first coordinator; additional coordinators must simply be added
+to the *xxx* and *xxx.coordinator* group.
 
 Add normal members to the group
 -------------------------------
