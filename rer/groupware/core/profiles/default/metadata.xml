@@ -8,9 +8,9 @@
 		<dependency>profile-redturtle.deletepolicy:default</dependency>
         <dependency>profile-rer.localmanager:default</dependency>
 		<dependency>profile-rer.editoradv:default</dependency>
-		<dependency>profile-rer.groupware.workflow:default</dependency>
-		<dependency>profile-rer.groupware.security:default</dependency>
 		<dependency>profile-rer.groupware.room:default</dependency>
+		<dependency>profile-rer.groupware.security:default</dependency>
+		<dependency>profile-rer.groupware.workflow:default</dependency>
 		<dependency>profile-rer.groupware.custom:default</dependency>
   </dependencies>
 </metadata>
