@@ -11,6 +11,5 @@
 		<dependency>profile-rer.groupware.room:default</dependency>
 		<dependency>profile-rer.groupware.security:default</dependency>
 		<dependency>profile-rer.groupware.workflow:default</dependency>
-		<dependency>profile-rer.groupware.custom:default</dependency>
   </dependencies>
 </metadata>

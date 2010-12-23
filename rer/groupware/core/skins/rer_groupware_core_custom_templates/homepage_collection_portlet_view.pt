@@ -52,15 +52,13 @@
 	        	</a>
 				<span class="discreet" tal:content="obj/parentRoom"/>
 			</p>
-			<div>
-			</div>
 	        <img src="" alt=""
 	             tal:condition="exists:python:path('here'+item_path.replace('/'+portal.getId(), '')+'/image_thumb')"
 	             tal:attributes="src string:${obj/getURL}/image_thumb;
 				                 alt obj/Description;"
 			     class="tileImage"/>
 			<div>
-				<span tal:content="obj/Description"/>
+				<span tal:condition="obj/Description" tal:content="obj/Description"/>
 	            <span class="portletItemDetails"
 	                  tal:condition="view/data/show_dates"
 	                  tal:content="python:toLocalizedTime(obj.Date)">

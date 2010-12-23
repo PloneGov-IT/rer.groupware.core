@@ -58,7 +58,7 @@
 			     class="tileImage"/>
 	
 			<div>
-				<span tal:content="obj/Description"/>
+				<span tal:condition="obj/Description" tal:content="obj/Description"/>
 	            <span class="portletItemDetails"
 	                  tal:condition="view/data/show_dates"
 	                  tal:content="python:toLocalizedTime(obj.Date)">
