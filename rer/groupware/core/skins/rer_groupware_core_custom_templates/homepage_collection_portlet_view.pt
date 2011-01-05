@@ -43,7 +43,7 @@
 			<p class="rt_item">
 				<a href="#"
 	           	   class="tile"
-	           	   tal:attributes="href obj/getURL;
+	           	   tal:attributes="href string:${obj/getURL}/view;
 	                               title obj/Description">
 	            	<img tal:replace="structure item_icon/html_tag" />
 	            	<span tal:replace="obj/Title">
