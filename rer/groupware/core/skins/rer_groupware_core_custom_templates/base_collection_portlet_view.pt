@@ -41,16 +41,21 @@
 						item_path obj/getPath;"
 	        tal:attributes="class python:oddrow and 'portletItem even rtCollectionPortletItem' or 'portletItem odd rtCollectionPortletItem'">
 			<p class="rt_item">
-				<a href="#"
-	           	   class="tile"
-	           	   tal:attributes="href string:${obj/getURL}/view;
-	                               title obj/Description">
-	            	<img tal:replace="structure item_icon/html_tag" />
-	            	<span tal:replace="obj/Title">
-	             		Title
-	            	</span>
-	        	</a>
-			</p>
+                <a href="#"
+                   class="tile"
+                   tal:define="state obj/review_state"
+                   tal:attributes="href string:${obj/getURL}/view;
+                                   title obj/Description;
+                                   class python:'tile state-%s' %state">
+                    <img tal:replace="structure item_icon/html_tag" />
+                    <span tal:replace="obj/Title">
+                        Title
+                    </span>
+                </a>
+                <span class="discreet" tal:condition="python:obj.review_state == 'visible'">
+                    <span i18n:translate="" tal:replace="python:context.portal_workflow.getTitleForStateOnType(obj.review_state,obj.portal_type)"></span>
+                </span>
+            </p>
 	        <img src="" alt=""
 	             tal:condition="exists:python:path('here'+item_path.replace('/'+portal.getId(), '')+'/image_thumb')"
 	             tal:attributes="src string:${obj/getURL}/image_thumb;

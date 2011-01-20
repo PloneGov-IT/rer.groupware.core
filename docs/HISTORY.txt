@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.1 (2011-01-20)
+------------------
+
+* updated portlet views and added topic_view for homepage [andrea]
+
 1.0.0 (xxxx-xx-xx)
 ------------------
 

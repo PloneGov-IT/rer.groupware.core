@@ -6,7 +6,8 @@
     i18n_domain="rer.groupware.core">
 
   <five:registerPackage package="." initialize=".initialize" />
-
+  
+  <include package=".browser" />
   <include file="skins.zcml" />
   
   <!-- Register the installation GenericSetup extension profile -->
