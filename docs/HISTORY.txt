@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1.0-Unreleased (2011-04-??)
+------------------
+
+* added mail notification when documents are retrieved [andrea]
+
 1.0.2 (2011-01-24)
 ------------------
 

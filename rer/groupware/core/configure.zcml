@@ -3,11 +3,14 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:monkey="http://namespaces.plone.org/monkey"
+	xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="rer.groupware.core">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
   
   <include package=".browser" />
+  <include package=".events" />
   <include file="skins.zcml" />
   
   <!-- Register the installation GenericSetup extension profile -->

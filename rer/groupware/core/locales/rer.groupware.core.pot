@@ -1,0 +1,44 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-04-04 15:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: rer.groupware.core\n"
+
+#. Default: "[GROUPWARE]: ${object_title} unlocked"
+#: ./browser/unlock_mail_notification.pt:15
+msgid "[GROUPWARE]: ${object_title} unlocked"
+msgstr ""
+
+#. Default: "Impossible sending the notification. Mail template not set."
+#: ./events/change_state_notification.py:40
+msgid "mailtemplate_not_set"
+msgstr ""
+
+#. Default: "Kind regards"
+#: ./browser/unlock_mail_notification.pt:29
+msgid "regards_mail_text"
+msgstr ""
+
+#. Default: "Impossible sending the notification. Mailserver not set in the portal."
+#: ./events/change_state_notification.py:28
+msgid "server_not_set"
+msgstr ""
+
+#. Default: "Dear ${author_name},<br /> the content ${obj_link} published by you in the folder ${obj_parent} is retrieved in draft state by the coordinator of the collaborative group ${modifier_name}."
+#: ./browser/unlock_mail_notification.pt:25
+msgid "unlock_mail_text"
+msgstr ""
+
