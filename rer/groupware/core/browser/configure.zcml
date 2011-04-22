@@ -29,4 +29,10 @@
         />
     </browser:menuItems>
     
+	
+	<browser:resource
+        name="groupware_core.css"
+        file="groupware_core.css"
+        />
+		
 </configure>

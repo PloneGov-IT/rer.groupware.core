@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1.1 (2011-04-22)
+------------------
+
+* fixed style in collection portlet views for images [andrea]
+
 1.1.0 (2011-04-05)
 ------------------
 

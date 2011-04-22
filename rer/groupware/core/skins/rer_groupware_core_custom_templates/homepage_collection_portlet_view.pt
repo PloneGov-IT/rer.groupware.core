@@ -61,7 +61,7 @@
 	             tal:condition="exists:python:path('here'+item_path.replace('/'+portal.getId(), '')+'/image_thumb')"
 	             tal:attributes="src string:${obj/getURL}/image_thumb;
 				                 alt obj/Description;"
-			     class="tileImage"/>
+			     class="image-collection"/>
 			<div>
 				<span tal:condition="obj/Description" tal:content="obj/Description"/>
 	            <span class="portletItemDetails"
@@ -70,6 +70,7 @@
 	                Date
 	            </span>
 			</div>
+			<div class="clearDiv"></div>
 	
 	    </dd>
 	    </tal:events>
