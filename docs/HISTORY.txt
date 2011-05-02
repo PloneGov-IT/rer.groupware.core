@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.2-UNRELEASED (2011-05-???)
+------------------
+* removed images from collection portlets templates [andrea]
+
 1.1.1 (2011-04-22)
 ------------------
 

@@ -57,11 +57,6 @@
     				- <span i18n:translate="" tal:replace="python:context.portal_workflow.getTitleForStateOnType(obj.review_state,obj.portal_type)"></span>
 				</span>
 			</p>
-	        <img src="" alt=""
-	             tal:condition="exists:python:path('here'+item_path.replace('/'+portal.getId(), '')+'/image_thumb')"
-	             tal:attributes="src string:${obj/getURL}/image_thumb;
-				                 alt obj/Description;"
-			     class="image-collection"/>
 			<div>
 				<span tal:condition="obj/Description" tal:content="obj/Description"/>
 	            <span class="portletItemDetails"
