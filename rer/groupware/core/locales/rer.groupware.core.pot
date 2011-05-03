@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-04-04 15:15+0000\n"
+"POT-Creation-Date: 2011-05-03 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,51 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: rer.groupware.core\n"
 
+#. Default: "A selection criterion for groupware"
+#: ./profiles/default/types/ATGroupwareSelectionCriterion.xml
+msgid "A selection criterion for groupware"
+msgstr ""
+
+#. Default: "Edit"
+#: ./profiles/default/types/ATGroupwareSelectionCriterion.xml
+msgid "Edit"
+msgstr ""
+
+#. Default: "Groupware Selection Criterion"
+#: ./profiles/default/types/ATGroupwareSelectionCriterion.xml
+msgid "Groupware Selection Criterion"
+msgstr ""
+
+#. Default: "References"
+#: ./profiles/default/types/ATGroupwareSelectionCriterion.xml
+msgid "References"
+msgstr ""
+
+#: ./groupware_selection_criterion.py:25
+msgid "Select values from list filtered by room"
+msgstr ""
+
+#. Default: "View"
+#: ./profiles/default/types/ATGroupwareSelectionCriterion.xml
+msgid "View"
+msgstr ""
+
 #. Default: "[GROUPWARE]: ${object_title} unlocked"
 #: ./browser/unlock_mail_notification.pt:15
 msgid "[GROUPWARE]: ${object_title} unlocked"
 msgstr ""
 
+#: ./groupware_selection_criterion.py:12
+msgid "and"
+msgstr ""
+
 #. Default: "Impossible sending the notification. Mail template not set."
 #: ./events/change_state_notification.py:40
 msgid "mailtemplate_not_set"
+msgstr ""
+
+#: ./groupware_selection_criterion.py:13
+msgid "or"
 msgstr ""
 
 #. Default: "Kind regards"

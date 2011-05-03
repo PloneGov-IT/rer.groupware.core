@@ -12,6 +12,14 @@
       permission="zope2.View"
       for="*"
       />
+	
+	<browser:page
+      name="filtered-subjects"
+      class=".filtered_subjects.View"
+      permission="zope2.View"
+      for="*"
+      />
+	  
 	<browser:page
 	  name="homepage_topic_view"
 	  template="homepage_topic_view.pt"

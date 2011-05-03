@@ -1,9 +1,11 @@
 Changelog
 =========
 
-1.1.2-UNRELEASED (2011-05-???)
+1.2.0-UNRELEASED (2011-05-???)
 ------------------
 * removed images from collection portlets templates [andrea]
+* added filter for subjects for objects: now if an object is created in a room, it can see only the subjects of the same portal_type created in that room [andrea]
+* added filter for subjects for topics: now if an object is created in a room, it can see only the subjects of the objects created in that room [andrea]
 
 1.1.1 (2011-04-22)
 ------------------
