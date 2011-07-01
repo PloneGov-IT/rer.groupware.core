@@ -50,9 +50,8 @@
                             batch folderContents;
                             show_about python:not isAnon or site_properties.allowAnonymousViewAbout;">
         <tal:listing condition="folderContents">
-
             <dl>
-                <tal:entry tal:repeat="item folderContents">
+                <tal:entry tal:repeat="item batch">
                 <tal:block tal:define="item_url item/getURL|item/absolute_url;
                                        item_id item/getId|item/id;
                                        item_title_or_id item/pretty_title_or_id;
@@ -165,7 +164,7 @@
             </dl>
             
             <!-- Navigation -->
-            <tal:block condition="python:not is_a_topic and not batch">
+            <tal:block condition="python:batch">
                 <div metal:use-macro="here/batch_macros/macros/navigation" />
             </tal:block>
             
