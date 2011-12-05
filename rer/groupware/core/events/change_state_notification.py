@@ -46,9 +46,9 @@ def sendMail(obj):
         modifier_name=logged_userid
     author_name=author.getProperty('fullname','')
     if not author_name:
-        author_mail=aythor_id
+        author_name=author_id
     mail_text = mail_template(mfrom=manager_mail,
-                              mto='andrea.cecchi@redturtle.net',
+                              mto=author_mail,
                               obj=obj,
                               obj_parent=getObjRoom(obj),
                               modifier_name=modifier_name,

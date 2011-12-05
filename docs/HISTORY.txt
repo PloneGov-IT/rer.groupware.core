@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.1 (2011-11-05)
+------------------
+* fixed bug in sending mail [andrea]
+
 1.2.0 (2011-07-08)
 ------------------
 * removed images from collection portlets templates [andrea]
