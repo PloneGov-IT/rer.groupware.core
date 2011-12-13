@@ -81,6 +81,10 @@
                                tal:content="item_title_or_id">
                                 Item Title
                             </a>
+                             <span class="discreet" tal:condition="python:item_type == 'File'"
+                                   tal:content="python:view.getFileType(item)" />
+                             <span class="discreet" tal:condition="python:item_type == 'Image'"
+                                   tal:content="item_type_title" />   
                         </span>
 
                         <span class="documentByLine">
@@ -148,7 +152,7 @@
                             </tal:byline>
                         </span>
                         <div class="discreet"
-						     tal:condition="item/parentRoom"
+						     tal:condition="python:view.__name__=='homepage_topic_view' and item.parentRoom"
 						     tal:content="item/parentRoom"></div>
                     </dt>
                     <dd>

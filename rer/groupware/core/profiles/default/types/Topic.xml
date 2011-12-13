@@ -5,5 +5,6 @@
  <property name="allow_discussion">True</property>
  <property name="view_methods" purge="False">
          <element value="homepage_topic_view"/>
+		 <element value="groupware_topic_view"/>
      </property>
 </object>

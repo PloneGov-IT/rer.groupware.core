@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.2 (2011-12-??)
+------------------
+* fixed topic templates [andrea]
+
 1.2.1 (2011-11-05)
 ------------------
 * fixed bug in sending mail [andrea]

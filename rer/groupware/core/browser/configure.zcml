@@ -22,11 +22,20 @@
 	  
 	<browser:page
 	  name="homepage_topic_view"
-	  template="homepage_topic_view.pt"
+	  template="groupware_topic_view.pt"
+	  class=".groupware_topic_view.View"
 	  permission="zope2.View"
 	  for="*"
 	  />
-       
+    
+	<browser:page
+      name="groupware_topic_view"
+      template="groupware_topic_view.pt"
+      class=".groupware_topic_view.View"
+      permission="zope2.View"
+      for="*"
+      />
+	
     <browser:menuItems
       for="Products.ATContentTypes.interface.IATTopic"
       menu="plone_displayviews">
@@ -37,6 +46,15 @@
         />
     </browser:menuItems>
     
+	<browser:menuItems
+      for="Products.ATContentTypes.interface.IATTopic"
+      menu="plone_displayviews">
+      <browser:menuItem
+        title="Groupware topic view"
+        action="groupware_topic_view"
+        description=""
+        />
+    </browser:menuItems>
 	
 	<browser:resource
         name="groupware_core.css"
