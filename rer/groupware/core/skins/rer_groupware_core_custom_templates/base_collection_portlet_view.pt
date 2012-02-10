@@ -28,9 +28,7 @@
 	             </a>
 			
 	        <span class="portletTopLeft"></span>
-	        <a tal:attributes="href collection_url" tal:omit-tag="not:view/data/show_more">
-	            <span tal:content="view/data/header" />
-	        </a>
+            <span class="tile" tal:content="view/data/header" />
 	        <span class="portletTopRight"></span>
 	    </dt>
 	    

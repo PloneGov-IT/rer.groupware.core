@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool" purge="False">
+ <object name="navtree_properties" meta_type="Plone Property Sheet" purge="False">
+  <property name="metaTypesNotToList" type="lines">
+   <element value="ATBooleanCriterion"/>
+   <element value="ATCurrentAuthorCriterion"/>
+   <element value="ATDateCriteria"/>
+   <element value="ATDateRangeCriterion"/>
+   <element value="ATListCriterion"/>
+   <element value="ATPathCriterion"/>
+   <element value="ATPortalTypeCriterion"/>
+   <element value="ATReferenceCriterion"/>
+   <element value="ATRelativePathCriterion"/>
+   <element value="ATSelectionCriterion"/>
+   <element value="ATSimpleIntCriterion"/>
+   <element value="ATSimpleStringCriterion"/>
+   <element value="ATSortCriterion"/>
+   <element value="BlogEntry"/>
+   <element value="ChangeSet"/>
+   <element value="Discussion Item"/>
+   <element value="Document"/>
+   <element value="Event"/>
+   <element value="File"/>
+   <element value="FileAttachment"/>
+   <element value="Image"/>
+   <element value="ImageAttachment"/>
+   <element value="Link"/>
+   <element value="News Item"/>
+   <element value="Plone Site"/>
+   <element value="PlonePopoll"/>
+   <element value="TempFolder"/>
+   <element value="Topic"/>
+   <element value="Booking"/>
+   <element value="ProjectMember"/>
+   <element value="Story"/>
+   <element value="Task"/>
+   <element value="PloneboardConversation"/>
+   <element value="PloneboardComment"/>
+  </property>
+ </object>
+</object>

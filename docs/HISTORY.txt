@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.2.3 (2012-02-10)
+------------------
+* fixed portlet collection templates. Removed links in the titles [andrea]
+* added propertiestool.xml [andrea]
+
 1.2.2 (2011-12-12)
 ------------------
 * fixed topic templates [andrea]
