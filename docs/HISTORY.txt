@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.4 (2012-02-22)
+------------------
+* added Projects to "metaTypesNotToList" list [andrea]
+
 1.2.3 (2012-02-10)
 ------------------
 * fixed portlet collection templates. Removed links in the titles [andrea]
