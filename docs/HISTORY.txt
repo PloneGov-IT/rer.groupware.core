@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.0.0 (Unreleased)
+------------------
+
+Versione Plone 4
+
+- z3c.autoinclude support [keul]
+- removed XM dependency [keul]
+
 1.2.4 (2012-02-22)
 ------------------
 * added Projects to "metaTypesNotToList" list [andrea]

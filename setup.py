@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.2.4'
+version = '2.0.0.dev0'
 
 setup(name='rer.groupware.core',
       version=version,
@@ -15,7 +15,7 @@ setup(name='rer.groupware.core',
         ],
       keywords='',
       author='RedTurtle Technology',
-      author_email='sviluppoplone@redturtle.net',
+      author_email='sviluppoplone@redturtle.it',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
@@ -24,9 +24,10 @@ setup(name='rer.groupware.core',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Products.eXtremeManagement'
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
