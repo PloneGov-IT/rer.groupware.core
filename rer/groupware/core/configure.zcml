@@ -21,6 +21,5 @@
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-		
-   <!--adapter factory=".conversation.conversationAdapterFactory" /-->
+
 </configure>

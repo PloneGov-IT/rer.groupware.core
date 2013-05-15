@@ -16,13 +16,12 @@ CompareOperators = DisplayList((
 
 class ATGroupwareSelectionCriterion(ATSelectionCriterion):
     """A selection criterion"""
-    
-    implements(IATGroupwareSelectionCriteria)
-    __implements__ = ATSelectionCriterion.__implements__ + (IATTopicSearchCriterion, )
-    schema         = ATSelectionCriterionSchema
-    meta_type      = 'ATGroupwareSelectionCriterion'
+
+    implements(IATGroupwareSelectionCriteria, IATTopicSearchCriterion)
+    schema = ATSelectionCriterionSchema
+    meta_type = 'ATGroupwareSelectionCriterion'
     archetype_name = 'Groupware Selection Criterion'
-    shortDesc      = 'Select values from list filtered by room'
+    shortDesc = 'Select values from list filtered by room'
 
     def getCurrentValues(self):
         

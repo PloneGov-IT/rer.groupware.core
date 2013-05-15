@@ -25,7 +25,7 @@
 	  template="groupware_topic_view.pt"
 	  class=".groupware_topic_view.View"
 	  permission="zope2.View"
-	  for="*"
+	  for="Products.ATContentTypes.interface.IATTopic"
 	  />
     
 	<browser:page
@@ -33,9 +33,17 @@
       template="groupware_topic_view.pt"
       class=".groupware_topic_view.View"
       permission="zope2.View"
-      for="*"
+      for="Products.ATContentTypes.interface.IATTopic"
       />
 	
+  <browser:page
+      name="groupware_collection_view"
+      template="groupware_collection_view.pt"
+      class=".groupware_topic_view.View"
+      permission="zope2.View"
+      for="plone.app.collection.interfaces.ICollection"
+      />
+
     <browser:menuItems
       for="Products.ATContentTypes.interface.IATTopic"
       menu="plone_displayviews">
@@ -55,7 +63,15 @@
         description=""
         />
     </browser:menuItems>
-	
+	<browser:menuItems
+      for="plone.app.collection.interfaces.ICollection"
+      menu="plone_displayviews">
+      <browser:menuItem
+        title="Groupware collection view"
+        action="groupware_collection_view"
+        description=""
+        />
+    </browser:menuItems>
 	<browser:resource
         name="groupware_core.css"
         file="groupware_core.css"

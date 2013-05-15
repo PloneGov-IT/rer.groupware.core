@@ -8,6 +8,7 @@ Versione Plone 4
 
 - z3c.autoinclude support [keul]
 - removed XM dependency [keul]
+- changed portlet collection template name [andrea]
 
 1.2.4 (2012-02-22)
 ------------------
