@@ -13,10 +13,9 @@
   <include package=".events" />
   <include file="skins.zcml" />
   
-  <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
-      title="RER Groupware Core"
+      title="RER Groupware: Core"
       directory="profiles/default"
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
