@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rer.groupware.core">
+
+<div metal:fill-slot="main"
+    tal:define="Batch python:modules['Products.CMFPlone'].Batch;
+                b_start request/b_start | python:0;
+                b_size request/b_size | python:20;
+                ">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">Active users</h1>
+
+    <p class="documentDescription" i18n:translate="room_activity_help">
+       Follow a list of all users that performed some kind of activity in this room. 
+    </p>
+
+    <div id="roomActivity"
+	     tal:define="results view/room_activity;
+                     batch python:Batch(results, b_size, int(b_start), orphan=1)">
+         <tal:query tal:condition="batch">
+                <div metal:use-macro="here/batch_macros/macros/navigation" />
+                <dl>
+                    <tal:for repeat="this_user batch">
+                      <dd 
+                          tal:define="userid this_user/userid;
+                                  portrait this_user/portrait;
+                                  fullname this_user/fullname|userid;">
+                          <img class="userActivityAvatar"
+                                     tal:condition="portrait"
+                                     tal:attributes="src portrait/absolute_url;
+									                 alt string:${userid};
+													 title string:${userid}"/>
+                          <a href="prefs_user_details"
+                               tal:attributes="href string:${portal_url}/author/${userid}">
+                             <span tal:replace="fullname" />
+                             (<span tal:replace="userid">userid</span>)
+                          </a>
+                          <div tal:define="email this_user/email|nothing;"
+                              tal:condition="email">
+                               <strong>Email:</strong>
+                                    <a tal:attributes="href string:mailto:${email}" tal:content="email">email</a>
+                          </div>
+                      </dd>
+                      <div class="visualClear"><!-- --></div>
+                    </tal:for>
+                </dl>
+                <div metal:use-macro="here/batch_macros/macros/navigation" />
+            </tal:query>
+
+            <p class="discreet"
+               tal:condition="python:not batch"
+               i18n:translate="">No activity found.
+            </p>
+
+
+        </div>
+
+</div>
+</html>
+
