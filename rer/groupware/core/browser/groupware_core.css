@@ -7,3 +7,11 @@
 .userActivityAvatar {
 	float: left;
 }
+
+#roomActivity .userActivityAvatar {
+	padding-right: 0.5em;
+}
+
+#roomActivity dd {
+	margin-bottom: 0.3em;
+}

@@ -9,14 +9,14 @@
 <div metal:fill-slot="main"
     tal:define="Batch python:modules['Products.CMFPlone'].Batch;
                 b_start request/b_start | python:0;
-                b_size request/b_size | python:20;
+                b_size request/b_size | python:50;
                 ">
 
     <h1 class="documentFirstHeading"
         i18n:translate="">Active users</h1>
 
     <p class="documentDescription" i18n:translate="room_activity_help">
-       Follow a list of all users that performed some kind of activity in this room. 
+       Follow a list of all users that contributed in the Room activity. 
     </p>
 
     <div id="roomActivity"
@@ -45,8 +45,8 @@
                                <strong>Email:</strong>
                                     <a tal:attributes="href string:mailto:${email}" tal:content="email">email</a>
                           </div>
+                      	  <div class="visualClear"><!-- --></div>
                       </dd>
-                      <div class="visualClear"><!-- --></div>
                     </tal:for>
                 </dl>
                 <div metal:use-macro="here/batch_macros/macros/navigation" />

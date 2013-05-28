@@ -33,10 +33,18 @@ class RoomActivityView(BrowserView):
         results = catalog(path='/'.join(context.getPhysicalPath()),
                           object_provides=[IComment.__identifier__,
                                            IPloneboardComment.__identifier__,])
-        users = []
-        for brain in results:
-            users.append(brain.Creator)
-        
-        active_users = self._get_users_info(tuple(set(users)))
+        users = {}
+        for r in results:
+            users.setdefault(r.Creator, r)
+        unique_users = []
+        # Can't read real userid of creator from catalog object (at least: not for comments)
+        for brain in users.values():
+            obj = brain.getObject()
+            owner = getattr(obj, 'author_username', obj.getOwner().getId())
+            if owner not in unique_users:
+                unique_users.append(owner)
+        active_users = sorted(self._get_users_info(set(unique_users)),
+                              cmp=lambda x,y: cmp(x.get('fullname', x.get('userid')),
+                                                  y.get('fullname', y.get('userid'))))
         
         return active_users

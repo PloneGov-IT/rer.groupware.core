@@ -4,11 +4,12 @@ Changelog
 2.0.0 (Unreleased)
 ------------------
 
-Versione Plone 4
+Plone 4 version
 
 - z3c.autoinclude support [keul]
 - removed XM dependency [keul]
 - changed portlet collection template name [andrea]
+- added the ``@@groupware-activity`` room view [keul]
 
 1.2.4 (2012-02-22)
 ------------------
