@@ -14,10 +14,11 @@
 
 <metal:listingmacro define-macro="listing">
 
-	<dl class="portlet rtCollectionPortlet"
-        tal:attributes="id view/data/div_id"
+	<dl tal:attributes="id view/data/div_id;
+                        class string:portlet rtCollectionPortlet groupwareCollectionPortlet ${class}"
 	    tal:define="collection_url view/collection_url;
-	                getIcon nocall:plone_view/getIcon;">
+	                getIcon nocall:plone_view/getIcon;
+                    class view/data/css_class|nothing;">
 	
 	    <dt class="portletHeader">
 	    		<a class="rss_feed"
@@ -50,7 +51,7 @@
                         Title
                     </span>
                 </a>
-                <span class="discreet" tal:condition="python:obj.review_state == 'visible'">
+                <span class="itemState discreet" tal:condition="python:obj.review_state == 'visible'">
                     <span i18n:translate="" tal:replace="python:context.portal_workflow.getTitleForStateOnType(obj.review_state,obj.portal_type)"></span>
                 </span>
             </p>
