@@ -6,8 +6,8 @@ version = '2.0.2.dev0'
 setup(name='rer.groupware.core',
       version=version,
       description="rer.groupware.core",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description=open("README.rst").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
@@ -18,7 +18,7 @@ setup(name='rer.groupware.core',
       keywords='',
       author='RedTurtle Technology',
       author_email='sviluppoplone@redturtle.it',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/PloneGov-IT/rer.groupware.core',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['rer', 'rer.groupware'],
