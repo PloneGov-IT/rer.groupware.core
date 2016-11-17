@@ -1,10 +1,11 @@
 Changelog
 =========
 
-2.0.2 (unreleased)
+2.1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add uninstall step
+  [cekk]
 
 
 2.0.1 (2013-11-05)

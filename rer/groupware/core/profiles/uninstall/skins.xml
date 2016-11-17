@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False">
+
+ <skin-path name="*">
+  <layer name="rer_groupware_core_custom_templates"
+     remove="True"/>
+ </skin-path>
+
+</object>

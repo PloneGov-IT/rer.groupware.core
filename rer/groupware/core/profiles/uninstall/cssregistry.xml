@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+ <stylesheet title="Groupware Core CSS"
+    id="++resource++groupware_core.css"
+    remove="True"/>
+
+</object>
