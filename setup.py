@@ -27,7 +27,6 @@ setup(name='rer.groupware.core',
       install_requires=[
           'setuptools',
           'plone.app.discussion',
-          'Products.Ploneboard',
       ],
       entry_points="""
       # -*- Entry points: -*-
