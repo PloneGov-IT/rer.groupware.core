@@ -11,14 +11,14 @@
       permission="zope2.View"
       for="*"
       />
-	
+
 	<browser:page
       name="filtered-subjects"
       class=".filtered_subjects.View"
       permission="zope2.View"
       for="*"
       />
-	  
+
 	<browser:page
 	  name="homepage_topic_view"
 	  template="groupware_topic_view.pt"
@@ -26,7 +26,7 @@
 	  permission="zope2.View"
 	  for="Products.ATContentTypes.interface.IATTopic"
 	  />
-    
+
 	<browser:page
       name="groupware_topic_view"
       template="groupware_topic_view.pt"
@@ -42,7 +42,7 @@
       permission="zope2.View"
       for="rer.groupware.room.interfaces.IGroupRoom"
       />
-	
+
   <browser:page
       name="groupware_collection_view"
       template="groupware_collection_view.pt"
@@ -60,7 +60,7 @@
         description=""
         />
     </browser:menuItems>
-    
+
 	<browser:menuItems
       for="Products.ATContentTypes.interface.IATTopic"
       menu="plone_displayviews">
@@ -79,9 +79,6 @@
         description=""
         />
     </browser:menuItems>
-	<browser:resource
-        name="groupware_core.css"
-        file="groupware_core.css"
-        />
-		
+
+
 </configure>
