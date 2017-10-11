@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.1.0 (unreleased)
+2.1.0 (2017-10-11)
 ------------------
 
 - Add uninstall step
