@@ -1,6 +1,7 @@
 from zope.interface import Interface
 
-class IATGroupwareSelectionCriteria(Interface):
+class IGroupwareSelectionCriteria(Interface):
     """
-    interface for criterion
+    interface for criteria
     """
+    

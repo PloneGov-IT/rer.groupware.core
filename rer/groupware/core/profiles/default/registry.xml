@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="plone.app.querystring">
+  <!-- <record
+      name="plone.parent_types_not_to_query"
+      interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema"
+      field="metaTypesNotToList">
+    <value>
+      <element value="ATBooleanCriterion"/>
+      <element value="ATCurrentAuthorCriterion"/>
+      <element value="ATDateCriteria"/>
+      <element value="ATDateRangeCriterion"/>
+      <element value="ATListCriterion"/>
+      <element value="ATPathCriterion"/>
+      <element value="ATPortalTypeCriterion"/>
+      <element value="ATReferenceCriterion"/>
+      <element value="ATRelativePathCriterion"/>
+      <element value="ATSelectionCriterion"/>
+      <element value="ATSimpleIntCriterion"/>
+      <element value="ATSimpleStringCriterion"/>
+      <element value="ATSortCriterion"/>
+      <element value="BlogEntry"/>
+      <element value="Booking"/>
+      <element value="ChangeSet"/>
+      <element value="Discussion Item"/>
+      <element value="Document"/>
+      <element value="Event"/>
+      <element value="File"/>
+      <element value="FileAttachment"/>
+      <element value="Image"/>
+      <element value="ImageAttachment"/>
+      <element value="Link"/>
+      <element value="News Item"/>
+      <element value="Plone Site"/>
+      <element value="PlonePopoll"/>
+      <element value="PloneboardComment"/>
+      <element value="PloneboardConversation"/>
+      <element value="Project"/>
+      <element value="ProjectMember"/>
+      <element value="Story"/>
+      <element value="Task"/>
+      <element value="TempFolder"/>
+    </value>
+  </record> -->
+
+
+  <!-- <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.Subject">
+        <value key="title" i18n:translate="">Tag</value>
+        <value key="description" i18n:translate="">Tags are used for organization of content</value>
+        <value key="enabled">True</value>
+        <value key="sortable">False</value>
+        <value key="operations">
+            <element>plone.app.querystring.operation.selection.any</element>
+            <element>plone.app.querystring.operation.selection.all</element>
+        </value>
+       <value key="vocabulary">plone.app.vocabularies.Keywords</value>
+       <value key="group" i18n:translate="">Text</value>
+    </records> -->
+
+    <!-- <records interface="plone.app.querystring.interfaces.IQueryOperation"
+                 prefix="rer.groupware.core.operation.selection.">
+        <value key="title" i18n:translate="">Matches any of</value>
+        <value key="description" i18n:translate="">Tip: you can use * to autocomplete.</value>
+        <value key="operation">rer.groupware.core.groupware_selection_criterion.getCurrentValues</value>
+        <value key="widget">MultipleSelectionWidget</value>
+    </records> -->
+
+
+    <!-- <records interface="plone.app.querystring.interfaces.IQueryField"
+                prefix="plone.app.querystring.field.Subject">
+           <value key="title" i18n:translate="">Tag</value>
+           <value key="description" i18n:translate="">Tags are used for organization of content</value>
+           <value key="enabled">True</value>
+           <value key="sortable">False</value>
+           <value key="operations">
+               <element>plone.app.querystring.operation.selection.any</element>
+               <element>plone.app.querystring.operation.selection.all</element>
+           </value>
+          <value key="vocabulary">rer.groupware.core.vocabularies.KeywordsVocabulary</value>
+          <value key="group" i18n:translate="">Text</value>
+       </records> -->
+
+
+  <!-- <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.Subject" purge="False">
+    <value key="operations" purge="False">
+        <element>rer.groupware.core.operation.selection.field.Subject</element>
+    </value>
+  </records> -->
+
+
+</registry>

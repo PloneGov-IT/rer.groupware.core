@@ -4,7 +4,7 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five.browser import BrowserView
 
 from plone.app.discussion.interfaces import IComment
-from Products.Ploneboard.interfaces import IComment as IPloneboardComment
+#from Products.Ploneboard.interfaces import IComment as IPloneboardComment #RT#
 
 class RoomActivityView(BrowserView):
     

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_properties" meta_type="Plone Properties Tool">
- <object name="navtree_properties" meta_type="Plone Property Sheet">
+ <!-- <object name="navtree_properties" meta_type="Plone Property Sheet">
   <property name="metaTypesNotToList" type="lines">
    <element value="ATBooleanCriterion"/>
    <element value="ATCurrentAuthorCriterion"/>
@@ -41,6 +41,5 @@
  </object>
  <object name="groupware_properties" meta_type="Plone Property Sheet">
    <property name="title" type="string">Groupware configuration properties</property>
-   <!-- maybe other plugin will add stuff there -->
- </object>
+ </object> -->
 </object>

@@ -6,7 +6,8 @@ Changelog
 
 - Add uninstall step
   [cekk]
-
+- Plone 5 compatibility
+  [cekk]
 
 2.0.1 (2013-11-05)
 ------------------
