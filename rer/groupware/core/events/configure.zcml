@@ -5,8 +5,8 @@
     i18n_domain="rer.groupware.room">
 
   <subscriber 
-      for="zope.interface.Interface
-          Products.CMFCore.interfaces.IActionSucceededEvent"
+      for="plone.dexterity.interfaces.IDexterityContent
+           Products.CMFCore.interfaces.IActionSucceededEvent"
       handler=".change_state_notification.notifyChangeState"
       />
 
