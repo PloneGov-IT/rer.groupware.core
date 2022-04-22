@@ -8,36 +8,16 @@
 
 <body>
 
-    <div metal:fill-slot="main">
-    <metal:main-macro define-macro="main"
-                      tal:define="kssClassesView context/@@kss_field_decorator_view;
-                                  normalizeString nocall:context/@@plone/normalizeString;
-                                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
-                                  mtool context/portal_membership;
-                                  toLocalizedTime nocall:context/@@plone/toLocalizedTime;
-                                  templateId template/getId">
-
-        <div tal:replace="structure provider:plone.abovecontenttitle" />
-
-        <h1 metal:use-macro="here/kss_generic_macros/macros/generic_title_view">
-            Title or id
-        </h1>
-
-        <div tal:replace="structure provider:plone.belowcontenttitle" />
-
-        <p metal:use-macro="here/kss_generic_macros/macros/generic_description_view">
-            Description
-        </p>
-
-        <div tal:replace="structure provider:plone.abovecontentbody" />
+  <div metal:fill-slot="content-core">
+    <metal:block define-macro="content-core"
+                 tal:define="templateId template/getId">
 
         <div metal:define-macro="text-field-view"
              id="parent-fieldname-text" class="stx"
-             tal:define="kss_class python:getKssClasses('text',
-                         templateId=templateId, macro='text-field-view');
-                         has_text exists:context/aq_base/getText;
-                         text python:has_text and here.getText() or ''"
-             tal:condition="text">
+             tal:define="has_text exists:context/aq_explicit/text;
+                         text python:has_text and here.text.output or ''"
+             tal:condition="text"
+             tal:attributes="class python:context.Format() in ('text/structured', 'text/x-rst', ) and 'stx'">
             <div metal:define-slot="inside" tal:replace="structure text">The body</div>
         </div>
 
@@ -51,6 +31,7 @@
                             over_limit python: limit_display and len(folderContents) > limit_display;
                             folderContents python: (over_limit and folderContents[:limit_display]) or folderContents;
                             batch folderContents;
+                            isAnon context/@@plone_portal_state/anonymous;
                             show_about python:not isAnon or site_properties.allowAnonymousViewAbout;">
         <tal:listing condition="folderContents">
             <dl>
@@ -189,7 +170,7 @@
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
-    </metal:main-macro>
+    </metal:block>
     </div>
 
 </body>
