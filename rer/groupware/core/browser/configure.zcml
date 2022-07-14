@@ -5,73 +5,66 @@
 
     <include package="plone.app.contentmenu" />
 
-	<browser:page
+  <browser:page
       name="unlock_mail_notification"
       template="unlock_mail_notification.pt"
       permission="zope2.View"
       for="*"
       />
 
-	<browser:page
+  <browser:page
       name="filtered-subjects"
       class=".filtered_subjects.View"
       permission="zope2.View"
       for="*"
       />
 
-	<browser:page
-	  name="homepage_topic_view"
-	  template="groupware_topic_view.pt"
-	  class=".groupware_topic_view.View"
-	  permission="zope2.View"
-	  for="Products.ATContentTypes.interface.IATTopic"
-	  />
+  <browser:page
+      name="homepage_topic_view"
+      template="groupware_topic_view.pt"
+      class=".groupware_topic_view.View"
+      permission="zope2.View"
+      for="plone.app.contenttypes.interfaces.ICollection"
+      />
 
-	<browser:page
+  <browser:page
       name="groupware_topic_view"
       template="groupware_topic_view.pt"
       class=".groupware_topic_view.View"
       permission="zope2.View"
-      for="Products.ATContentTypes.interface.IATTopic"
+      for="plone.app.contenttypes.interfaces.ICollection"
       />
 
-	<browser:page
+  <!--
+  <browser:page
       name="groupware-activity"
       template="activity.pt"
       class=".groupware_activity.RoomActivityView"
       permission="zope2.View"
       for="rer.groupware.room.interfaces.IGroupRoom"
       />
+  -->
 
   <browser:page
       name="groupware_collection_view"
       template="groupware_collection_view.pt"
       class=".groupware_topic_view.View"
       permission="zope2.View"
-      for="plone.app.collection.interfaces.ICollection"
+      for="plone.app.contenttypes.interfaces.ICollection"
       />
 
-    <browser:menuItems
-      for="Products.ATContentTypes.interface.IATTopic"
+  <browser:menuItems
+      for="plone.app.contenttypes.interfaces.ICollection"
       menu="plone_displayviews">
       <browser:menuItem
         title="Homepage topic view"
         action="homepage_topic_view"
         description=""
         />
-    </browser:menuItems>
+  </browser:menuItems>
 
-	<browser:menuItems
-      for="Products.ATContentTypes.interface.IATTopic"
-      menu="plone_displayviews">
-      <browser:menuItem
-        title="Groupware topic view"
-        action="groupware_topic_view"
-        description=""
-        />
-    </browser:menuItems>
-	<browser:menuItems
-      for="plone.app.collection.interfaces.ICollection"
+  <browser:menuItems
+      for="plone.app.contenttypes.interfaces.ICollection"
       menu="plone_displayviews">
       <browser:menuItem
         title="Groupware collection view"
@@ -79,6 +72,5 @@
         description=""
         />
     </browser:menuItems>
-
 
 </configure>

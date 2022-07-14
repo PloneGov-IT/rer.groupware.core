@@ -4,8 +4,10 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="rer.groupware.room">
 
-	<subscriber for = "Products.Archetypes.interfaces.IBaseObject
-                Products.CMFCore.interfaces.IActionSucceededEvent"
-                handler = ".change_state_notification.notifyChangeState"
-                />		
+  <subscriber 
+      for="plone.dexterity.interfaces.IDexterityContent
+           Products.CMFCore.interfaces.IActionSucceededEvent"
+      handler=".change_state_notification.notifyChangeState"
+      />
+
 </configure>

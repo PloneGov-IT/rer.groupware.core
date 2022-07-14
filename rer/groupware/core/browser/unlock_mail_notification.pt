@@ -1,12 +1,12 @@
 <tal:root define="lt string:<;gt string:>;
                   dummy python:request.RESPONSE.setHeader('Content-Type', 'text/plain;; charset=%s' % options['charset']);
                   mfrom python:options['mfrom'];
-		          mto python:options['mto'];
-				  author_name python:options['author_name'];
-				  modifier_name python:options['modifier_name'];
-				  obj python:options['obj'];
-				  obj_parent python:options['obj_parent'];
-				  mfrom python:options['mfrom'];"
+                  mto python:options['mto'];
+                  author_name python:options['author_name'];
+                  modifier_name python:options['modifier_name'];
+                  obj python:options['obj'];
+                  obj_parent python:options['obj_parent'];
+                  mfrom python:options['mfrom'];"
 >From: <span tal:replace="mfrom" />
 To: <span tal:replace="mto" />
 Mime-Version: 1.0
@@ -17,13 +17,13 @@ Precedence: bulk
 
 
 <p i18n:domain="rer.groupware.core" i18n:translate="unlock_mail_text">
-	Dear <span tal:replace="author_name" i18n:name="author_name"/>,<br />
-	the content <a i18n:name="obj_link" 
-	               tal:attributes="href obj/absolute_url;title obj/Title"
-				   tal:content="obj/Title"></a> published by you in the folder 
-	<span tal:replace="obj_parent" i18n:name="obj_parent"/> is retrieved in draft 
-	state by the coordinator of the collaborative group <span tal:replace="modifier_name"
-	                                                          i18n:name="modifier_name"/>.
+    Dear <span tal:replace="author_name" i18n:name="author_name"/>,<br />
+    the content <a i18n:name="obj_link"
+                   tal:attributes="href obj/absolute_url;title obj/Title"
+                   tal:content="obj/Title"></a> published by you in the folder
+<span tal:replace="obj_parent" i18n:name="obj_parent"/> is retrieved in draft
+state by the coordinator of the collaborative group <span tal:replace="modifier_name"
+                                                          i18n:name="modifier_name"/>.
 </p>
 
 <p i18n:domain="rer.groupware.core" i18n:translate="regards_mail_text">
