@@ -6,6 +6,7 @@ Changelog
 
 - major refactoring for python 3.8 and plone 5.2.
   [reflab]
+  fix minor problem with collection view
 
 
 2.1.0 (2017-10-11)
